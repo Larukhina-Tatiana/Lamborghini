@@ -1,0 +1,23 @@
+.nav {
+  // height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__container {
+    max-width: 1200px;
+    padding: 0 80px 0 25px;
+  }
+
+  &__menu-list {
+    display: flex;
+    gap: 40px;
+    padding-top: 25px;
+  }
+
+  &__menu-link {
+    font-size: 16px;
+    line-height: calc(18/16);
+    color: var(--dark-grey);
+  }
+}

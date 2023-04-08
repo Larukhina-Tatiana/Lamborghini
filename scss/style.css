@@ -1,0 +1,251 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.big-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.1875;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "RobotoCondensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+picture {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+/* Скрытие заголовка */
+:root {
+  --black: #040404;
+  --dark-grey: #363636;
+  --gold: #9F6B08;
+  --light-gold: #F9CE5C;
+  --gradient-light: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
+  --white: #FFFFFF;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("/scss/components/fonts/RobotoCondensed-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("/scss/components/fonts/RobotoCondensed-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("/scss/components/fonts/RobotoCondensed-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Impact";
+  src: url("/fonts/impact.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("/scss/components/fonts/RobotoCondensed-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+.header {
+  padding-top: 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__container {
+  max-width: 1200px;
+  padding: 0 80px 0 25px;
+}
+.nav__menu-list {
+  display: flex;
+  gap: 40px;
+  padding-top: 25px;
+}
+.nav__menu-link {
+  font-size: 16px;
+  line-height: 1.125;
+  color: var(--dark-grey);
+}
+
+.hero {
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Impact", sans-serif;
+  color: var(--black);
+}
+.hero__title {
+  margin-bottom: 10px;
+  font-size: 76px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.hero__subtitle {
+  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: 400;
+  border-bottom: 1px solid var(--black);
+  align-self: center;
+}
+.hero__subtitle span {
+  padding: 10px 0;
+  display: block;
+  font-size: 34px;
+  color: var(--gold);
+}
+.hero__text {
+  margin-bottom: 10px;
+  font-family: "RobotoCondensed", sans-serif;
+  font-size: 16px;
+  color: var(--dark-grey);
+}
+.hero__arrow {
+  margin-top: auto;
+  margin-bottom: 30px;
+  align-self: center;
+}
+
+.info {
+  margin-bottom: 100px;
+}
+.info__part {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.info__part--padding {
+  padding-bottom: 66px;
+}
+.info__part--block {
+  display: block;
+}
+.info__part-textbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.info__text {
+  flex-basis: 438px;
+  margin-bottom: 30px;
+}
+.info__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.info__content {
+  flex-basis: 415px;
+}
+.info__text--width {
+  max-width: 352px;
+}
+.info__table {
+  position: relative;
+  top: 20px;
+  flex-basis: 450px;
+  border-bottom: 1px solid var(--black);
+}
+.info__table::before {
+  position: absolute;
+  content: "";
+  border-top: 1px solid var(--black);
+  width: 100%;
+  top: -20px;
+}
+.info__table td {
+  padding-bottom: 20px;
+}
+
+hr {
+  background: var(--black);
+  width: 279px;
+  height: 1px;
+}/*# sourceMappingURL=style.css.map */
