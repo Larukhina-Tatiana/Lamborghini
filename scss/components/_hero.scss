@@ -49,6 +49,11 @@
     margin-top: auto;
     margin-bottom: 30px;
     align-self: center;
-  }
 
+    &:hover &-svg {
+      fill: var(--gold);
+      color: var(--gold);
+      @include transition ($transition-property: (color, fill));
+    }
+  }
 }
