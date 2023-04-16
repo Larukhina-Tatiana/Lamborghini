@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 100px 0 80px;
+  padding: 100px 0 80px;
   background-color: var(--dark-grey);
   color: var(--white);
 
@@ -93,7 +93,41 @@
       }
     }
   }
+
+  @media screen and (width < 768px) {
+    padding: 50px 0 30px;
+  }
+
+  @media screen and (width < 669px) {
+    &__top {
+      display: block;
+    }
+  }
+
+  @media screen and (width < 480px) {
+    &__social-list {
+      margin-bottom: 50px;
+    }
+    &__top {
+      display: block;
+    }
+
+    &__bottom {
+      display: block;
+      text-align: center;
+    }
+
+    &__logo {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      & img {
+        margin: 0 auto;
+      }
+    }
+  }
 }
 #map {
-  height: 250px;
+  height: 253px;
 }

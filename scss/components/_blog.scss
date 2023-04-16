@@ -65,8 +65,9 @@
   }
 
   &__quote-box {
-    min-width: 434px;
+    max-width: 434px;
   }
+
   &__blockquote {
     margin-bottom: 30px;
 
@@ -88,4 +89,31 @@
     }
   }
 
+  @media screen and (width < 768px) {
+    margin-bottom: 50px;
+
+    & .subtitle {
+      margin-bottom: 30px;
+    }
+
+    &__slider {
+      margin-bottom: 50px;
+    }
+    &__item-img {
+      width: 100%;
+    }
+    &__quote {
+      flex-direction: column;
+
+      &-box {
+        flex-basis: auto;
+      }
+
+      &-img {
+        width: 100%;
+        order: -1;
+        margin: 0 auto;
+      }
+    }
+  }
 }

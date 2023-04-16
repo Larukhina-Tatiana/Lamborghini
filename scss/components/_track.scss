@@ -8,7 +8,7 @@
   &__inner {
     display: flex;
     flex-direction: column;
-    min-width: 100vh;
+    min-height: 100vh;
   }
 
 
@@ -17,6 +17,6 @@
   }
 
   &__img {
-    margin: 250px auto 90px auto;
+    margin: auto auto 90px auto;
   }
 }
