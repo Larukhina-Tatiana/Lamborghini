@@ -71,6 +71,9 @@
   }
 
   @media screen and (width < 1100px) {
+    &__container {
+      padding: 0;
+    }
 
     &__menu-list {
       display: none;

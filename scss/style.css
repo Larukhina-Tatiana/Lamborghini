@@ -190,6 +190,9 @@ button {
   color: var(--gold);
 }
 @media screen and (width < 1100px) {
+  .nav__container {
+    padding: 0;
+  }
   .nav__menu-list {
     display: none;
   }
