@@ -8,6 +8,11 @@ html{
   box-sizing: inherit;
 }
 
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding:0 10px;
+}
 
 .big-container {
   max-width: 1220px;
@@ -15,11 +20,7 @@ html{
   padding:0 10px;
 }
 
-.container {
-  max-width: 920px;
-  margin: 0 auto;
-  padding:0 10px;
-}
+
 
 .subtitle {
   margin-bottom: 30px;
