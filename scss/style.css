@@ -91,31 +91,31 @@ button {
 
 @font-face {
   font-family: "RobotoCondensed";
-  src: url("./fonts/RobotoCondensed-Light.ttf");
+  src: url("../fonts/RobotoCondensed-Light.ttf");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "RobotoCondensed";
-  src: url("./fonts/RobotoCondensed-Regular.ttf");
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "RobotoCondensed";
-  src: url("./fonts/RobotoCondensed-Italic.ttf");
+  src: url("../fonts/RobotoCondensed-Italic.ttf");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Impact";
-  src: url("./fonts/impact.woff2");
+  src: url("../fonts/impact.woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "RobotoCondensed";
-  src: url("./fonts/RobotoCondensed-Bold.ttf");
+  src: url("../fonts/RobotoCondensed-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
